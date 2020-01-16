@@ -1,0 +1,38 @@
+main {
+  height: 100vh;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas: "card-holder sidebar";
+  }
+}
+
+.card-holder {
+  grid-area: card-holder;
+  background: rgb(253, 253, 253);
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto-fill, 10em);
+  @media (min-width: 768px) {
+    border-top: none;
+    border-right: solid 1px rgba(0, 0, 0, 0.1);
+  }
+  @media (min-width: 880px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1060px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 1380px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 1em;
+}
