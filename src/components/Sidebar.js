@@ -1,6 +1,29 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMapMarkerAlt,
+  faCheckCircle,
+  faCommentDots,
+  faEdit
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Sidebar() {
+  const servicesList = [
+    "Something",
+    "Something",
+    "Something",
+    "Something",
+    "Something",
+    "Something",
+    "Something",
+    "Something",
+    "Something"
+  ].map(item => (
+    <li>
+      <FontAwesomeIcon icon={faCheckCircle} /> {item}
+    </li>
+  ));
+
   return (
     <aside className="sidebar">
       <section className="user-details">
@@ -8,11 +31,17 @@ export default function Sidebar() {
 
         <h2>Simon Wright</h2>
         <span>SIM #12345</span>
-        <address>123 My Street</address>
+        <address>
+          <FontAwesomeIcon icon={faMapMarkerAlt} /> 123 My Street
+        </address>
 
         <div className="user-details--links">
-          <button>Ask for Quote</button>
-          <button>Chat</button>
+          <button>
+            <FontAwesomeIcon icon={faEdit} /> Ask for Quote
+          </button>
+          <button>
+            <FontAwesomeIcon icon={faCommentDots} /> Chat
+          </button>
         </div>
       </section>
 
@@ -37,16 +66,7 @@ export default function Sidebar() {
       <section className="user-services">
         <h4>The services I offer</h4>
 
-        <ul className="user-services--list">
-          <li>Something</li>
-          <li>Something</li>
-          <li>Something</li>
-          <li>Something</li>
-          <li>Something</li>
-          <li>Something</li>
-          <li>Something</li>
-          <li>Something</li>
-        </ul>
+        <ul className="user-services--list">{servicesList}</ul>
       </section>
     </aside>
   );

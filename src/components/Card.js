@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function Card() {
   return (
@@ -13,7 +15,9 @@ export default function Card() {
       </div>
 
       <div className="card-footer">
-        <address>123 My Street</address>
+        <address>
+          <FontAwesomeIcon icon={faMapMarkerAlt} /> 123 My Street
+        </address>
         <div className="card-brand-img"></div>
       </div>
     </div>

@@ -27,21 +27,30 @@
     h2,
     span,
     address {
-      margin: 0 0 0.6rem;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    span,
+    address {
+      font-size: 14px;
     }
 
     .user-details--links {
       display: flex;
       justify-content: space-around;
-      margin-bottom: 1.5em;
+      margin: 1.5em;
 
       button {
         background: rgb(70, 184, 131);
         color: white;
         border: none;
         border-radius: 20px;
-        padding: 0.5em;
-        min-width: 8em;
+        padding: 0.8em;
+        min-width: 10em;
         margin: 0 0.5em;
       }
     }
@@ -86,6 +95,11 @@
       li {
         width: 50%;
         padding: 0.5em 0;
+      }
+
+      svg {
+        color: rgb(70, 184, 131);
+        font-size: 14px;
       }
     }
   }

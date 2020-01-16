@@ -9,20 +9,20 @@
   flex-direction: column;
 
   &:hover {
-    border-color: green;
+    border-color: rgb(70, 184, 131);
     transform: scale3d(1.1, 1.1, 1.1);
   }
 
   .card-details {
     display: grid;
-    grid-template-columns: 2.3em 1fr;
+    grid-template-columns: 3.2em 1fr;
     grid-gap: 0.5em;
     flex-grow: 1;
 
     .card-user-img {
       grid-column-start: 1;
-      width: 2.3em;
-      height: 2.3em;
+      width: 3.2em;
+      height: 3.2em;
       background: #ccc;
       border-radius: 50%;
     }
