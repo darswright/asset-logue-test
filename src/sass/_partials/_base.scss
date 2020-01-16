@@ -17,3 +17,16 @@ h6 {
 svg {
   margin-right: 0.3em;
 }
+
+.github-link {
+  font-size: 34px;
+  position: fixed;
+  bottom: 0.5em;
+  left: 1em;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+
+  &:hover {
+    transform: scale3d(1.4, 1.4, 1.4);
+    color: rgb(70, 184, 131);
+  }
+}

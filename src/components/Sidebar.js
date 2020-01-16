@@ -27,7 +27,9 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <section className="user-details">
-        <div className="user-details--img"></div>
+        <div className="user-details--img">
+          <img src="https://darswright.com/static/media/profilepic.4c02c226.jpg" />
+        </div>
 
         <h2>Simon Wright</h2>
         <span>SIM #12345</span>
@@ -55,7 +57,7 @@ export default function Sidebar() {
       </section>
 
       <section className="user-languages">
-        <h4>The launguages I speak</h4>
+        <h4>The launguages I speak:</h4>
 
         <ul className="user-languages--list">
           <li>English</li>
@@ -64,7 +66,7 @@ export default function Sidebar() {
       </section>
 
       <section className="user-services">
-        <h4>The services I offer</h4>
+        <h4>The services I offer:</h4>
 
         <ul className="user-services--list">{servicesList}</ul>
       </section>
